@@ -1,27 +1,5 @@
-" Type:
-"     Color file
-"
-" Maintainer:
-"     Petar Katić
-"     https://github.com/bratpeki/
-"
-" Last Change:
-"     2023 Jan 01 (for Neovim 0.8.1)
-"
-" Comments:
-"     "truedark" refers to the six-zeros black background
-"     present in the actual colorscheme. The colors are meant to
-"     fill the color spectrum and not focus on being reshades of
-"     the same three colors, because I feel like it makes a nicer
-"     and better user experience. It is very bare-boned and
-"     elementary, which I think adds to that simplicity of the theme.
-"
-"     More help on how to manage and edit this theme can be found at:
-"         :he group-name
-"         :he highlight-groups
-"         :he cterm-colors
-"     If you have coc.nvim installed visit:
-"         :he coc-highlights
+" fork of https://github.com/bratpeki/truedark-vim
+" i love this color scheme so much
 
 set background=dark
 highlight clear
@@ -31,71 +9,71 @@ if exists("syntax_on")
 endif
 
 set t_Co=256
-let g:colors_name = "truedark"
+let g:colors_name = "truedark256"
 
 " CURSOR
 
-hi Cursor       guifg=NONE guibg=#585858
-hi CursorLine   guibg=#303030
-hi CursorLineNr guifg=#e4e4e4
+hi Cursor       guifg=NONE guibg=240
+hi CursorLine   guibg=236
+hi CursorLineNr guifg=254
 
 " DIRECTORY
 
-hi Directory    guifg=#00ffff gui=NONE
+hi Directory    guifg=14 gui=NONE
 
 " GROUPS
 
-hi Comment      guifg=#949494
-hi Constant     guifg=#ffaf00 gui=bold
-hi Identifier   guifg=#00ffff gui=bold
-hi Function     guifg=#8700ff gui=bold
-hi Statement    guifg=#87ff00 gui=bold
-hi PreProc      guifg=#af5f00 gui=bold
-hi Type         guifg=#ff00d7 gui=bold
-hi Special      guifg=#5f5fff gui=bold
-hi Underlined   guifg=#5fafd7 gui=underline
-hi Ignore       guifg=#303030
-hi Error        guifg=#ff0000 guibg=NONE gui=underline,bold
-hi Todo         guifg=#ffff00 guibg=NONE
+hi Comment      guifg=246
+hi Constant     guifg=214 gui=bold
+hi Identifier   guifg=14 gui=bold
+hi Function     guifg=93 gui=bold
+hi Statement    guifg=118 gui=bold
+hi PreProc      guifg=130 gui=bold
+hi Type         guifg=200 gui=bold
+hi Special      guifg=63 gui=bold
+hi Underlined   guifg=74 gui=underline
+hi Ignore       guifg=236
+hi Error        guifg=9 guibg=NONE gui=underline,bold
+hi Todo         guifg=11 guibg=NONE
 
 " MODES
 
-hi Normal       guifg=#c6c6c6 guibg=#000000
-hi Search       guifg=NONE guibg=#444444
-hi Visual       guibg=#3a3a3a
+hi Normal       guifg=251 guibg=0
+hi Search       guifg=NONE guibg=238
+hi Visual       guibg=237
 
 " NONTEXT
 
-hi NonText      guifg=#444444 guibg=NONE
+hi NonText      guifg=238 guibg=NONE
 
 " POPUP MENU
 
-hi Pmenu        guifg=#c0c0c0 guibg=#000000
-hi PmenuSbar    guifg=#000000 guibg=#c0c0c0
-hi PmenuSel     guifg=#000000 guibg=#c0c0c0
-hi WildMenu     guifg=#000000 guibg=#005f00
+hi Pmenu        guifg=7 guibg=0
+hi PmenuSbar    guifg=0 guibg=7
+hi PmenuSel     guifg=0 guibg=7
+hi WildMenu     guifg=0 guibg=22
 
 " STATUSLINE
 
-hi StatusLine   guifg=#444444 guibg=#a8a8a8
-hi StatusLineNC guifg=#444444 guibg=#a8a8a8
+hi StatusLine   guifg=238 guibg=248
+hi StatusLineNC guifg=238 guibg=248
 
 " TABS
 
-hi TabLine      guifg=#a8a8a8 guibg=#444444 gui=NONE
-hi TabLineFill  guifg=#444444 guibg=#444444
-hi TabLineSel   guifg=#e4e4e4 guibg=#444444
+hi TabLine      guifg=248 guibg=238 gui=NONE
+hi TabLineFill  guifg=238 guibg=238
+hi TabLineSel   guifg=254 guibg=238
 
 " VIM CONSTRUCTS
 
-hi ColorColumn  guibg=#434343
-hi Folded       guifg=#a8a8a8 guibg=#4e4e4e gui=italic
-hi LineNr       guifg=#949494
-hi ModeMsg      guifg=#c6c6c6
+hi ColorColumn  guibg=238
+hi Folded       guifg=248 guibg=239 gui=italic
+hi LineNr       guifg=246
+hi ModeMsg      guifg=251
 hi SignColumn   guibg=NONE
-hi VertSplit    guifg=#444444 guibg=#000000
+hi VertSplit    guifg=238 guibg=0
 
 " PLUGIN: coc.nvim
 
-hi CocMenuSel   guifg=#000000 guibg=#c0c0c0
+hi CocMenuSel   guifg=0 guibg=7
 hi CocPumSearch guifg=NONE gui=bold
