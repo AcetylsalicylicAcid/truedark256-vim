@@ -2,5 +2,5 @@
 
 Fork of bratpeki's [truedark-vim](https://github.com/bratpeki/truedark-vim) vim color scheme.
 
-I dont want to install iTerm on my mac to have true color support in terminal since my favorite color scheme is literally in 256 colors but in hex codes. So I forked it.
+I like original implementation, but i dont want to install iterm on my mac to have true color support. Since original scheme is literally in 256 colors but in hex codes - I forked it.
 

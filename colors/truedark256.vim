@@ -1,5 +1,4 @@
-" fork of https://github.com/bratpeki/truedark-vim
-" i love this color scheme so much
+" 256 colors fork of https://github.com/bratpeki/truedark-vim
 
 set background=dark
 highlight clear
@@ -13,67 +12,67 @@ let g:colors_name = "truedark256"
 
 " CURSOR
 
-hi Cursor       guifg=NONE guibg=240
-hi CursorLine   guibg=236
-hi CursorLineNr guifg=254
+hi Cursor       ctermfg=NONE ctermbg=240
+hi CursorLine   ctermbg=236
+hi CursorLineNr ctermfg=254
 
 " DIRECTORY
 
-hi Directory    guifg=14 gui=NONE
+hi Directory    ctermfg=14 cterm=NONE
 
 " GROUPS
 
-hi Comment      guifg=246
-hi Constant     guifg=214 gui=bold
-hi Identifier   guifg=14 gui=bold
-hi Function     guifg=93 gui=bold
-hi Statement    guifg=118 gui=bold
-hi PreProc      guifg=130 gui=bold
-hi Type         guifg=200 gui=bold
-hi Special      guifg=63 gui=bold
-hi Underlined   guifg=74 gui=underline
-hi Ignore       guifg=236
-hi Error        guifg=9 guibg=NONE gui=underline,bold
-hi Todo         guifg=11 guibg=NONE
+hi Comment      ctermfg=246
+hi Constant     ctermfg=214 cterm=bold
+hi Identifier   ctermfg=14 cterm=bold
+hi Function     ctermfg=93 cterm=bold
+hi Statement    ctermfg=118 cterm=bold
+hi PreProc      ctermfg=130 cterm=bold
+hi Type         ctermfg=200 cterm=bold
+hi Special      ctermfg=63 cterm=bold
+hi Underlined   ctermfg=74 cterm=underline
+hi Ignore       ctermfg=236
+hi Error        ctermfg=9 ctermbg=NONE cterm=underline,bold
+hi Todo         ctermfg=11 ctermbg=NONE
 
 " MODES
 
-hi Normal       guifg=251 guibg=0
-hi Search       guifg=NONE guibg=238
-hi Visual       guibg=237
+hi Normal       ctermfg=251 ctermbg=0
+hi Search       ctermfg=NONE ctermbg=238
+hi Visual       ctermbg=237
 
 " NONTEXT
 
-hi NonText      guifg=238 guibg=NONE
+hi NonText      ctermfg=238 ctermbg=NONE
 
 " POPUP MENU
 
-hi Pmenu        guifg=7 guibg=0
-hi PmenuSbar    guifg=0 guibg=7
-hi PmenuSel     guifg=0 guibg=7
-hi WildMenu     guifg=0 guibg=22
+hi Pmenu        ctermfg=7 ctermbg=0
+hi PmenuSbar    ctermfg=0 ctermbg=7
+hi PmenuSel     ctermfg=0 ctermbg=7
+hi WildMenu     ctermfg=0 ctermbg=22
 
 " STATUSLINE
 
-hi StatusLine   guifg=238 guibg=248
-hi StatusLineNC guifg=238 guibg=248
+hi StatusLine   ctermfg=238 ctermbg=248
+hi StatusLineNC ctermfg=238 ctermbg=248
 
 " TABS
 
-hi TabLine      guifg=248 guibg=238 gui=NONE
-hi TabLineFill  guifg=238 guibg=238
-hi TabLineSel   guifg=254 guibg=238
+hi TabLine      ctermfg=248 ctermbg=238 cterm=NONE
+hi TabLineFill  ctermfg=238 ctermbg=238
+hi TabLineSel   ctermfg=254 ctermbg=238
 
 " VIM CONSTRUCTS
 
-hi ColorColumn  guibg=238
-hi Folded       guifg=248 guibg=239 gui=italic
-hi LineNr       guifg=246
-hi ModeMsg      guifg=251
-hi SignColumn   guibg=NONE
-hi VertSplit    guifg=238 guibg=0
+hi ColorColumn  ctermbg=238
+hi Folded       ctermfg=248 ctermbg=239 cterm=italic
+hi LineNr       ctermfg=246
+hi ModeMsg      ctermfg=251
+hi SignColumn   ctermbg=NONE
+hi VertSplit    ctermfg=238 ctermbg=0
 
 " PLUGIN: coc.nvim
 
-hi CocMenuSel   guifg=0 guibg=7
-hi CocPumSearch guifg=NONE gui=bold
+hi CocMenuSel   ctermfg=0 ctermbg=7
+hi CocPumSearch ctermfg=NONE cterm=bold
